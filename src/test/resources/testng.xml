@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Demo_suete" parallel="methods" thread-count="3">
+    <test name="Demo test 1.0">
+        <parameter name="title" value="Все цены Харькова (Прайс навигатор): товары и услуги, магазины в Харькове"/>
+        <classes>
+            <class name="Demo">
+                <methods>
+                    <include name="verifyTitle"/>
+                    <include name="verifyContainPcBlock"/>
+                    <include name="verifyContainComputer"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
